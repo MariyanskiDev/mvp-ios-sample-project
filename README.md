@@ -1,2 +1,2 @@
-# mvp-ios-template-project
-MVP iOS Template Project
+# MVP iOS Template Project
+soon...
