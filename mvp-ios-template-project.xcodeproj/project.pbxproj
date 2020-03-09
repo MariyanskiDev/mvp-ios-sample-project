@@ -3,23 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		15DC6C442416EB30007CF2B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6C432416EB30007CF2B2 /* AppDelegate.swift */; };
-		15DC6C462416EB30007CF2B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6C452416EB30007CF2B2 /* SceneDelegate.swift */; };
 		15DC6C482416EB30007CF2B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6C472416EB30007CF2B2 /* ViewController.swift */; };
 		15DC6C4B2416EB30007CF2B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DC6C492416EB30007CF2B2 /* Main.storyboard */; };
 		15DC6C4D2416EB33007CF2B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15DC6C4C2416EB33007CF2B2 /* Assets.xcassets */; };
 		15DC6C502416EB33007CF2B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DC6C4E2416EB33007CF2B2 /* LaunchScreen.storyboard */; };
 		15DC6C582416EC1E007CF2B2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 15DC6C572416EC1E007CF2B2 /* README.md */; };
+		15DC6C5B2416F07D007CF2B2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 15DC6C5A2416F07D007CF2B2 /* Moya */; };
+		15DC6C5E2416F0EB007CF2B2 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 15DC6C5D2416F0EB007CF2B2 /* PromiseKit */; };
+		15DC6C612416F17C007CF2B2 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 15DC6C602416F17C007CF2B2 /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15DC6C402416EB30007CF2B2 /* mvp-ios-template-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvp-ios-template-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DC6C432416EB30007CF2B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		15DC6C452416EB30007CF2B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		15DC6C472416EB30007CF2B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		15DC6C4A2416EB30007CF2B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15DC6C4C2416EB33007CF2B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15DC6C5B2416F07D007CF2B2 /* Moya in Frameworks */,
+				15DC6C5E2416F0EB007CF2B2 /* PromiseKit in Frameworks */,
+				15DC6C612416F17C007CF2B2 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,15 +63,54 @@
 		15DC6C422416EB30007CF2B2 /* mvp-ios-template-project */ = {
 			isa = PBXGroup;
 			children = (
-				15DC6C432416EB30007CF2B2 /* AppDelegate.swift */,
-				15DC6C452416EB30007CF2B2 /* SceneDelegate.swift */,
-				15DC6C472416EB30007CF2B2 /* ViewController.swift */,
-				15DC6C492416EB30007CF2B2 /* Main.storyboard */,
-				15DC6C4C2416EB33007CF2B2 /* Assets.xcassets */,
-				15DC6C4E2416EB33007CF2B2 /* LaunchScreen.storyboard */,
-				15DC6C512416EB33007CF2B2 /* Info.plist */,
+				15DC6C632416F2B1007CF2B2 /* Resource */,
+				15DC6C622416F2A8007CF2B2 /* Source */,
 			);
 			path = "mvp-ios-template-project";
+			sourceTree = "<group>";
+		};
+		15DC6C622416F2A8007CF2B2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				15DC6C642416F2BD007CF2B2 /* Application */,
+				15DC6C652416F2E5007CF2B2 /* Modules */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		15DC6C632416F2B1007CF2B2 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				15DC6C4E2416EB33007CF2B2 /* LaunchScreen.storyboard */,
+				15DC6C4C2416EB33007CF2B2 /* Assets.xcassets */,
+				15DC6C512416EB33007CF2B2 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		15DC6C642416F2BD007CF2B2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				15DC6C432416EB30007CF2B2 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		15DC6C652416F2E5007CF2B2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				15DC6C662416F2ED007CF2B2 /* Temp */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		15DC6C662416F2ED007CF2B2 /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+				15DC6C472416EB30007CF2B2 /* ViewController.swift */,
+				15DC6C492416EB30007CF2B2 /* Main.storyboard */,
+			);
+			path = Temp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +129,11 @@
 			dependencies = (
 			);
 			name = "mvp-ios-template-project";
+			packageProductDependencies = (
+				15DC6C5A2416F07D007CF2B2 /* Moya */,
+				15DC6C5D2416F0EB007CF2B2 /* PromiseKit */,
+				15DC6C602416F17C007CF2B2 /* Swinject */,
+			);
 			productName = "mvp-ios-template-project";
 			productReference = 15DC6C402416EB30007CF2B2 /* mvp-ios-template-project.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +162,11 @@
 				Base,
 			);
 			mainGroup = 15DC6C372416EB30007CF2B2;
+			packageReferences = (
+				15DC6C592416F07D007CF2B2 /* XCRemoteSwiftPackageReference "Moya" */,
+				15DC6C5C2416F0EB007CF2B2 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				15DC6C5F2416F17C007CF2B2 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 15DC6C412416EB30007CF2B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,7 +197,6 @@
 			files = (
 				15DC6C482416EB30007CF2B2 /* ViewController.swift in Sources */,
 				15DC6C442416EB30007CF2B2 /* AppDelegate.swift in Sources */,
-				15DC6C462416EB30007CF2B2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +342,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ECS9EVZ42;
-				INFOPLIST_FILE = "mvp-ios-template-project/Info.plist";
+				INFOPLIST_FILE = "mvp-ios-template-project/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mariyanski.mvp-ios-template-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +361,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ECS9EVZ42;
-				INFOPLIST_FILE = "mvp-ios-template-project/Info.plist";
+				INFOPLIST_FILE = "mvp-ios-template-project/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mariyanski.mvp-ios-template-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -342,6 +396,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		15DC6C592416F07D007CF2B2 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+		15DC6C5C2416F0EB007CF2B2 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.13.1;
+			};
+		};
+		15DC6C5F2416F17C007CF2B2 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15DC6C5A2416F07D007CF2B2 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15DC6C592416F07D007CF2B2 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		15DC6C5D2416F0EB007CF2B2 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15DC6C5C2416F0EB007CF2B2 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		15DC6C602416F17C007CF2B2 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15DC6C5F2416F17C007CF2B2 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15DC6C382416EB30007CF2B2 /* Project object */;
 }
