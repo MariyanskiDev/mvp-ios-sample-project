@@ -16,6 +16,9 @@
 		15DC6C5B2416F07D007CF2B2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 15DC6C5A2416F07D007CF2B2 /* Moya */; };
 		15DC6C5E2416F0EB007CF2B2 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 15DC6C5D2416F0EB007CF2B2 /* PromiseKit */; };
 		15DC6C612416F17C007CF2B2 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 15DC6C602416F17C007CF2B2 /* Swinject */; };
+		15DC6C6C2416F6A4007CF2B2 /* MoyaProvider+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6C6B2416F6A4007CF2B2 /* MoyaProvider+Default.swift */; };
+		15DC6C6E2416F6B6007CF2B2 /* MoyaProvider+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6C6D2416F6B6007CF2B2 /* MoyaProvider+Promise.swift */; };
+		15DC6C702416F6BD007CF2B2 /* DefaultTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6C6F2416F6BD007CF2B2 /* DefaultTargetType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		15DC6C4F2416EB33007CF2B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15DC6C512416EB33007CF2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15DC6C572416EC1E007CF2B2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		15DC6C6B2416F6A4007CF2B2 /* MoyaProvider+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Default.swift"; sourceTree = "<group>"; };
+		15DC6C6D2416F6B6007CF2B2 /* MoyaProvider+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Promise.swift"; sourceTree = "<group>"; };
+		15DC6C6F2416F6BD007CF2B2 /* DefaultTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTargetType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +69,8 @@
 		15DC6C422416EB30007CF2B2 /* mvp-ios-template-project */ = {
 			isa = PBXGroup;
 			children = (
-				15DC6C632416F2B1007CF2B2 /* Resource */,
 				15DC6C622416F2A8007CF2B2 /* Source */,
+				15DC6C632416F2B1007CF2B2 /* Resource */,
 			);
 			path = "mvp-ios-template-project";
 			sourceTree = "<group>";
@@ -74,6 +80,7 @@
 			children = (
 				15DC6C642416F2BD007CF2B2 /* Application */,
 				15DC6C652416F2E5007CF2B2 /* Modules */,
+				15DC6C692416F620007CF2B2 /* Core additions */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -111,6 +118,24 @@
 				15DC6C492416EB30007CF2B2 /* Main.storyboard */,
 			);
 			path = Temp;
+			sourceTree = "<group>";
+		};
+		15DC6C692416F620007CF2B2 /* Core additions */ = {
+			isa = PBXGroup;
+			children = (
+				15DC6C6A2416F666007CF2B2 /* Networking */,
+			);
+			path = "Core additions";
+			sourceTree = "<group>";
+		};
+		15DC6C6A2416F666007CF2B2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				15DC6C6F2416F6BD007CF2B2 /* DefaultTargetType.swift */,
+				15DC6C6D2416F6B6007CF2B2 /* MoyaProvider+Promise.swift */,
+				15DC6C6B2416F6A4007CF2B2 /* MoyaProvider+Default.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +220,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15DC6C702416F6BD007CF2B2 /* DefaultTargetType.swift in Sources */,
+				15DC6C6E2416F6B6007CF2B2 /* MoyaProvider+Promise.swift in Sources */,
 				15DC6C482416EB30007CF2B2 /* ViewController.swift in Sources */,
 				15DC6C442416EB30007CF2B2 /* AppDelegate.swift in Sources */,
+				15DC6C6C2416F6A4007CF2B2 /* MoyaProvider+Default.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
