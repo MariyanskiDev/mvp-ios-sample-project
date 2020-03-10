@@ -15,6 +15,8 @@ protocol PostsRoute {
 extension PostsRoute where Self: Routable {
 
     func openPostsModule() {
-
+        let controller = AppAssembly.resolver.resolve(PostsViewController.self)!
+        
+        open(controller, transition: postsTransition)
     }
 }

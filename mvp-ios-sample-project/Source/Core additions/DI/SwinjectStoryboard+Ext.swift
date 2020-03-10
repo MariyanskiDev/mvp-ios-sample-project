@@ -15,7 +15,7 @@ extension SwinjectStoryboard {
     @objc class func setup() {
         let services: [Assembly] = [PostsServiceAssembly()]
         
-        let modules: [Assembly] = [PostsAssembly()]
+        let modules: [Assembly] = [PostsAssembly(), CommentsAssembly()]
 
         AppAssembly.defaultAssembler.apply(assemblies: services)
         AppAssembly.defaultAssembler.apply(assemblies: modules)

@@ -6,11 +6,6 @@
 //  Copyright © 2020 Marian Fotev. All rights reserved.
 //
 
-final class PostsRouter: Router<PostsViewController> {
-
-}
-
-//TODO: implement some routes
-extension PostsRouter {
-
+final class PostsRouter: Router<PostsViewController>, CommentsRoute {
+    let commentsTransition: Transition = PushTransition()
 }

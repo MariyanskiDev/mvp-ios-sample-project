@@ -1,5 +1,5 @@
 //
-//  PostsViewController.swift
+//  CommentsViewController.swift
 //  mvp-ios-sample-project
 //
 //  Created by Marian Fotev on 10/03/2020.
@@ -8,15 +8,15 @@
 
 import UIKit
 
-final class PostsViewController: UIViewController {
-    
+final class CommentsViewController: UIViewController {
+
     // MARK: - Interface builder outlets
     
     @IBOutlet private weak var tableView: UITableView!
 
     // MARK: - Public Properties
 
-    var output: PostsViewOutput?
+    var output: CommentsViewOutput?
     
     // MARK: - Private Properties
     
@@ -25,7 +25,7 @@ final class PostsViewController: UIViewController {
 
 // MARK: - View lifecycle
 
-extension PostsViewController {
+extension CommentsViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +35,9 @@ extension PostsViewController {
     }
 }
 
-// MARK: - PostsViewInput implementation
+// MARK: - CommentsViewInput implementation
 
-extension PostsViewController: PostsViewInput {
+extension CommentsViewController: CommentsViewInput {
     
     func update(_ sections: [TableSectionModel]) {
         datasource.sections = sections
@@ -46,20 +46,12 @@ extension PostsViewController: PostsViewInput {
     }
 }
 
-extension PostsViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        output?.cellTapped(at: indexPath)
-    }
-}
-
 // MARK: - Private functions
 
-private extension PostsViewController {
+private extension CommentsViewController {
     
     func setupView() {
         tableView.dataSource = datasource
-        tableView.delegate = self
-        tableView.registerCell(byType: PostCell.self)
+        tableView.registerCell(byType: CommentCell.self)
     }
 }

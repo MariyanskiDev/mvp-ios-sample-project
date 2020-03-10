@@ -6,12 +6,18 @@
 //  Copyright © 2020 Marian Fotev. All rights reserved.
 //
 
+import UIKit
+
 final class PostsPresenter {
 
     // MARK: Public properties
 
     weak var view: PostsViewInput?
     var router: PostsRouter?
+    
+    // MARK: Private properties
+    
+    private var posts: [Post] = []
     
     // MARK: Dependencies
     
@@ -31,6 +37,14 @@ extension PostsPresenter: PostsViewOutput {
     func viewIsReady() {
         loadPosts()
     }
+    
+    func cellTapped(at indexPath: IndexPath) {
+        guard let post = posts[optional: indexPath.row] else {
+            return
+        }
+        
+        router?.openCommentsModule(identifier: post.id)
+    }
 }
 
 private extension PostsPresenter {
@@ -38,6 +52,7 @@ private extension PostsPresenter {
     func loadPosts() {
         service.getPosts()
             .done { posts in
+                self.posts = posts
                 self.updateSections(posts)
             }
             .catch { error in

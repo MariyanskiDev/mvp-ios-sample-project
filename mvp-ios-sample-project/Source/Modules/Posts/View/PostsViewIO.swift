@@ -6,8 +6,11 @@
 //  Copyright © 2020 Marian Fotev. All rights reserved.
 //
 
+import UIKit
+
 protocol PostsViewOutput {
     func viewIsReady()
+    func cellTapped(at indexPath: IndexPath)
 }
 
 protocol PostsViewInput: class {
