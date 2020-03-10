@@ -1,0 +1,49 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+import Swinject
+
+final class {{ module_info.name }}Assembly: Assembly {
+
+    func assemble(container: Container) {
+        registerRouter(container)
+        registerPresenter(container)
+        registerViewController(container)
+    }
+}
+
+private extension {{ module_info.name }}Assembly {
+
+    func registerRouter(_ container: Container) {
+        container.register({{ module_info.name }}Router.self) { _ in
+            {{ module_info.name }}Router()
+        }
+    }
+
+    func registerPresenter(_ container: Container) {
+        container.register({{ module_info.name }}Presenter.self) { _ in
+            {{ module_info.name }}Presenter()
+        }
+    }
+
+    func registerViewController(_ container: Container) {
+        container.register({{ module_info.name }}ViewController.self) { (resolver, moduleOutput: {{ module_info.name }}ModuleOutput) in
+            let view: {{ module_info.name }}ViewController = UIStoryboard.viewController()
+            let presenter = resolver.resolve({{ module_info.name }}Presenter.self)!
+            let router = resolver.resolve({{ module_info.name }}Router.self)!
+
+            presenter.view = view
+            presenter.output = moduleOutput
+            router.view = view
+            view.output = presenter
+
+            return view
+        }
+    }
+}

@@ -1,0 +1,27 @@
+# Template information section
+name: "mariyanski_mvp"
+summary: "Template for creating MVP modules."
+author: "Fotev Marian"
+version: "1.0.0"
+
+# The declarations for code files
+
+code_files:
+
+# Assembly
+- {name: Assembly/Assembly.swift, path: Code/Assembly/assembly.swift.liquid}
+
+# Router layer
+- {name: Router/Router.swift, path: Code/Router/router.swift.liquid}
+- {name: Router/Route.swift, path: Code/Router/route.swift.liquid}
+
+# Presenter layer
+- {name: Presenter/Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
+- {name: Presenter/ModuleIO.swift, path: Code/Presenter/module_io.swift.liquid}
+
+# View layer
+- {name: View/ViewController.swift, path: Code/View/view_controller.swift.liquid}
+- {name: View/ViewIO.swift,  path: Code/View/view_io.swift.liquid}
+
+# Layout
+- {name: Layout/.storyboard, path: Code/Layout/storyboard.storyboard.liquid}

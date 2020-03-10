@@ -1,0 +1,23 @@
+### Headers settings
+company: "Marian Fotev"
+
+### Xcode project settings
+project_name: mvp-ios-sample-project
+xcodeproj_path: mvp-ios-sample-project.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: mvp-ios-sample-project
+
+# The file path for new modules
+project_file_path: mvp-ios-sample-project/Source/Modules
+
+# The Xcode group path to new modules
+project_group_path: mvp-ios-sample-project/Source/Modules
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+templates:
+- { name: mariyanski_mvp }

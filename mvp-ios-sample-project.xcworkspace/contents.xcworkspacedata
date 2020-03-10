@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:mvp-ios-template-project.xcodeproj">
+      location = "group:/Users/mariyanski/Documents/GitHub/mvp-ios-sample-project/mvp-ios-sample-project.xcodeproj">
    </FileRef>
 </Workspace>
