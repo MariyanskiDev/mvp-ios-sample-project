@@ -11,5 +11,5 @@ protocol PostsViewOutput {
 }
 
 protocol PostsViewInput: class {
-
+    func update(_ sections: [TableSectionModel])
 }

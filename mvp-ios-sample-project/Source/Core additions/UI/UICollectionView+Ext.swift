@@ -1,9 +1,9 @@
 //
 //  UICollectionView+Ext.swift
-//  BusinessTravel
+//  mvp-ios-sample-project
 //
-//  Created by Fotev Marian on 07/10/2019.
-//  Copyright © 2019 Tekhnologii Delovogo Turizma, OOO. All rights reserved.
+//  Created by Marian Fotev on 10/03/2020.
+//  Copyright © 2020 Marian Fotev. All rights reserved.
 //
 
 import UIKit

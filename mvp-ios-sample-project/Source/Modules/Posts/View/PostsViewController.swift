@@ -9,10 +9,18 @@
 import UIKit
 
 final class PostsViewController: UIViewController {
+    
+    // MARK: - Interface builder outlets
+    
+    @IBOutlet private weak var tableView: UITableView!
 
-    // MARK: - Properties
+    // MARK: - Public Properties
 
     var output: PostsViewOutput?
+    
+    // MARK: - Private Properties
+    
+    private let datasource = TableViewDataSource()
 }
 
 // MARK: - View lifecycle
@@ -22,6 +30,7 @@ extension PostsViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupView()
         output?.viewIsReady()
     }
 }
@@ -29,5 +38,20 @@ extension PostsViewController {
 // MARK: - PostsViewInput implementation
 
 extension PostsViewController: PostsViewInput {
+    
+    func update(_ sections: [TableSectionModel]) {
+        datasource.sections = sections
+        
+        tableView.reloadData()
+    }
+}
 
+// MARK: - Private functions
+
+private extension PostsViewController {
+    
+    func setupView() {
+        tableView.dataSource = datasource
+        tableView.registerCell(byType: PostCell.self)
+    }
 }

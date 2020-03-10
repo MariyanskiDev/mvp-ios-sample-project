@@ -32,7 +32,7 @@ enum EncodingType {
 extension DefaultTargetType {
     
     var version: String {
-        return "api"
+        return ""
     }
     
     var encodingType: EncodingType {
@@ -45,7 +45,7 @@ extension DefaultTargetType {
 extension DefaultTargetType {
     
     var baseURL: URL {
-        return URL(string: "https://jsonplaceholder.typicode.com\(version)/")!
+        return URL(string: "https://jsonplaceholder.typicode.com\(version)")!
     }
     
     var sampleData: Data {

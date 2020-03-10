@@ -28,19 +28,18 @@ private extension PostsAssembly {
     }
 
     func registerPresenter(_ container: Container) {
-        container.register(PostsPresenter.self) { _ in
-            PostsPresenter()
+        container.register(PostsPresenter.self) { resolver in
+            PostsPresenter(service: resolver.resolve(PostsService.self)!)
         }
     }
 
     func registerViewController(_ container: Container) {
-        container.register(PostsViewController.self) { (resolver, moduleOutput: PostsModuleOutput) in
+        container.register(PostsViewController.self) { resolver in
             let view: PostsViewController = UIStoryboard.viewController()
             let presenter = resolver.resolve(PostsPresenter.self)!
             let router = resolver.resolve(PostsRouter.self)!
 
             presenter.view = view
-            presenter.output = moduleOutput
             router.view = view
             view.output = presenter
 
