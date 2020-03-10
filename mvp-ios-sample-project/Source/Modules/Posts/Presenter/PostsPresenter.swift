@@ -12,7 +12,7 @@ final class PostsPresenter {
 
     // MARK: Public properties
 
-    weak var view: PostsViewInput?
+    weak var view: PostsView?
     var router: PostsRouter?
     
     // MARK: Private properties
@@ -50,14 +50,19 @@ extension PostsPresenter: PostsViewOutput {
 private extension PostsPresenter {
     
     func loadPosts() {
+        view?.didChangeLoadingState(true)
+        
         service.getPosts()
-            .done { posts in
-                self.posts = posts
-                self.updateSections(posts)
-            }
-            .catch { error in
-                print(error.localizedDescription)
-            }
+        .done { posts in
+            self.posts = posts
+            self.updateSections(posts)
+        }
+        .ensure {
+            self.view?.didChangeLoadingState(false)
+        }
+        .catch { error in
+            print(error.localizedDescription)
+        }
     }
     
     func updateSections(_ posts: [Post]) {

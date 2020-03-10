@@ -6,6 +6,8 @@
 //  Copyright © 2020 Marian Fotev. All rights reserved.
 //
 
+typealias CommentsView = CommentsViewInput & LoadingPresentable
+
 protocol CommentsViewOutput {
     func viewIsReady()
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class CommentsViewController: UIViewController {
+final class CommentsViewController: LoadableViewController {
 
     // MARK: - Interface builder outlets
     

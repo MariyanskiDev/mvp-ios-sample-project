@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class PostsViewController: UIViewController {
+final class PostsViewController: LoadableViewController {
     
     // MARK: - Interface builder outlets
     

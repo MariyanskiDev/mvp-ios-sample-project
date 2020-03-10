@@ -51,6 +51,7 @@
 		15DA10D12417C63000B1A3EC /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15DA10CF2417C63000B1A3EC /* PostCell.xib */; };
 		15DA10D42417D46400B1A3EC /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA10D22417D46400B1A3EC /* CommentCell.swift */; };
 		15DA10D52417D46400B1A3EC /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15DA10D32417D46400B1A3EC /* CommentCell.xib */; };
+		15DA10D72417DA5700B1A3EC /* LoadableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA10D62417DA5700B1A3EC /* LoadableViewController.swift */; };
 		15DC6C582416EC1E007CF2B2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 15DC6C572416EC1E007CF2B2 /* README.md */; };
 		3440175B2C24D2A0AC12E505 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC11D8697FB2B6AB1688A3C /* CommentsViewController.swift */; };
 		4705293CE9D55C77B7A1D28D /* Posts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B8D3A6C2C2171012EF3E91 /* Posts.storyboard */; };
@@ -111,6 +112,7 @@
 		15DA10CF2417C63000B1A3EC /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		15DA10D22417D46400B1A3EC /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		15DA10D32417D46400B1A3EC /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		15DA10D62417DA5700B1A3EC /* LoadableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableViewController.swift; sourceTree = "<group>"; };
 		15DC6C402416EB30007CF2B2 /* mvp-ios-sample-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvp-ios-sample-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DC6C572416EC1E007CF2B2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		25CCC9583A64F1B5B8CB03B7 /* CommentsAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CommentsAssembly.swift; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 				15DA10C62417BF3000B1A3EC /* UICollectionView+Ext.swift */,
 				15DA10BD2417BEBE00B1A3EC /* ViewModel.swift */,
 				15DA10C42417BF2600B1A3EC /* UITableView+Ext.swift */,
+				15DA10D62417DA5700B1A3EC /* LoadableViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -680,6 +683,7 @@
 				15B8BF6A2417A2D5003ADBCE /* AppAssembly.swift in Sources */,
 				15DA10C72417BF3000B1A3EC /* UICollectionView+Ext.swift in Sources */,
 				82EE57433098B4E5620DA8D7 /* PostsAssembly.swift in Sources */,
+				15DA10D72417DA5700B1A3EC /* LoadableViewController.swift in Sources */,
 				15DA10CB2417BF6A00B1A3EC /* FormattedDate.swift in Sources */,
 				7CDD7FD44F4F9C7E7B302D04 /* PostsRouter.swift in Sources */,
 				F00BF49AB40B7E786A5D3292 /* PostsRoute.swift in Sources */,

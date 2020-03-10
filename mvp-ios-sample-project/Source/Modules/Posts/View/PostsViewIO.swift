@@ -8,6 +8,8 @@
 
 import UIKit
 
+typealias PostsView = PostsViewInput & LoadingPresentable
+
 protocol PostsViewOutput {
     func viewIsReady()
     func cellTapped(at indexPath: IndexPath)

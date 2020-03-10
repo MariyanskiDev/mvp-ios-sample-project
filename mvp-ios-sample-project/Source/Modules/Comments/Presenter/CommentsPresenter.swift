@@ -10,11 +10,15 @@ final class CommentsPresenter {
 
     // MARK: Public properties
 
-    weak var view: CommentsViewInput?
+    weak var view: CommentsView?
     var router: CommentsRouter?
+    
+    // MARK: Dependencies
     
     private let postIdentifier: Int
     private let service: PostsService
+    
+    // MARK: Constructor
     
     init(postIdentifier: Int, service: PostsService) {
         self.postIdentifier = postIdentifier
@@ -34,13 +38,18 @@ extension CommentsPresenter: CommentsViewOutput {
 private extension CommentsPresenter {
     
     func loadComments() {
+        view?.didChangeLoadingState(true)
+        
         service.getComments(id: String(postIdentifier))
-            .done { comments in
-                self.updateSections(comments)
-            }
-            .catch { error in
-                print(error.localizedDescription)
-            }
+        .done { comments in
+            self.updateSections(comments)
+        }
+        .ensure {
+            self.view?.didChangeLoadingState(false)
+        }
+        .catch { error in
+            print(error.localizedDescription)
+        }
     }
     
     func updateSections(_ comments: [Comment]) {
