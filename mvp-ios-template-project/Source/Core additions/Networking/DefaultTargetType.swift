@@ -9,27 +9,21 @@
 import Moya
 import Foundation
 
-/// Протокол, используемый для определения спецификаций,
-/// необходимых для `MoyaProvider`
+/// The protocol used to define the specifications necessary for a `MoyaProvider`.
 protocol DefaultTargetType: TargetType {
     
-    /// Версия API
+    /// API Version
     var version: String { get }
 
-    /// Параметры запроса
+    /// Request parameters
     var parameters: [String: Any] { get }
     
-    /// Способ кодирования параметров
+    
     var encodingType: EncodingType { get }
 }
 
-/// Перечисление способов кодирования параметров
-///
-/// - json: JSONEncoding() для кодирования в json
-/// - url: URLEncoding() для кодирования как атрибуты URL
-/// - propertyList: PropertyListEncoding() для кодирования в список параметров
 enum EncodingType {
-    case json
+    case body
     case url
 }
 
@@ -42,7 +36,7 @@ extension DefaultTargetType {
     }
     
     var encodingType: EncodingType {
-        return .json
+        return .url
     }
 }
 
@@ -51,7 +45,7 @@ extension DefaultTargetType {
 extension DefaultTargetType {
     
     var baseURL: URL {
-        return URL(string: "https://something\(version)/")!
+        return URL(string: "https://jsonplaceholder.typicode.com\(version)/")!
     }
     
     var sampleData: Data {
@@ -73,7 +67,7 @@ extension DefaultTargetType {
     var task: Task {
         let encoding: ParameterEncoding = {
             switch encodingType {
-            case .json:
+            case .body:
                 return JSONEncoding()
             case .url:
                 return URLEncoding()

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1562AEB124178E5A00CB2E3E /* PostsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562AEB024178E5A00CB2E3E /* PostsEndpoint.swift */; };
+		1562AEB3241793CD00CB2E3E /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562AEB2241793CD00CB2E3E /* PostsService.swift */; };
+		1562AEB8241794C600CB2E3E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562AEB7241794C600CB2E3E /* Post.swift */; };
+		1562AEBA2417950700CB2E3E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562AEB92417950700CB2E3E /* Comment.swift */; };
 		15DC6C442416EB30007CF2B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6C432416EB30007CF2B2 /* AppDelegate.swift */; };
 		15DC6C482416EB30007CF2B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC6C472416EB30007CF2B2 /* ViewController.swift */; };
 		15DC6C4B2416EB30007CF2B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DC6C492416EB30007CF2B2 /* Main.storyboard */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1562AEB024178E5A00CB2E3E /* PostsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsEndpoint.swift; sourceTree = "<group>"; };
+		1562AEB2241793CD00CB2E3E /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
+		1562AEB7241794C600CB2E3E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1562AEB92417950700CB2E3E /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		15DC6C402416EB30007CF2B2 /* mvp-ios-template-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvp-ios-template-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DC6C432416EB30007CF2B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15DC6C472416EB30007CF2B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1562AEAE24178CF700CB2E3E /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				1562AEB024178E5A00CB2E3E /* PostsEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		1562AEAF24178D0300CB2E3E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1562AEB2241793CD00CB2E3E /* PostsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1562AEB62417943B00CB2E3E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1562AEB7241794C600CB2E3E /* Post.swift */,
+				1562AEB92417950700CB2E3E /* Comment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		15DC6C372416EB30007CF2B2 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +111,7 @@
 		15DC6C622416F2A8007CF2B2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1562AEB62417943B00CB2E3E /* Models */,
 				15DC6C642416F2BD007CF2B2 /* Application */,
 				15DC6C652416F2E5007CF2B2 /* Modules */,
 				15DC6C692416F620007CF2B2 /* Core additions */,
@@ -131,6 +165,8 @@
 		15DC6C6A2416F666007CF2B2 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				1562AEAE24178CF700CB2E3E /* Endpoints */,
+				1562AEAF24178D0300CB2E3E /* Services */,
 				15DC6C6F2416F6BD007CF2B2 /* DefaultTargetType.swift */,
 				15DC6C6D2416F6B6007CF2B2 /* MoyaProvider+Promise.swift */,
 				15DC6C6B2416F6A4007CF2B2 /* MoyaProvider+Default.swift */,
@@ -220,10 +256,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1562AEB124178E5A00CB2E3E /* PostsEndpoint.swift in Sources */,
 				15DC6C702416F6BD007CF2B2 /* DefaultTargetType.swift in Sources */,
+				1562AEB3241793CD00CB2E3E /* PostsService.swift in Sources */,
+				1562AEB8241794C600CB2E3E /* Post.swift in Sources */,
 				15DC6C6E2416F6B6007CF2B2 /* MoyaProvider+Promise.swift in Sources */,
 				15DC6C482416EB30007CF2B2 /* ViewController.swift in Sources */,
 				15DC6C442416EB30007CF2B2 /* AppDelegate.swift in Sources */,
+				1562AEBA2417950700CB2E3E /* Comment.swift in Sources */,
 				15DC6C6C2416F6A4007CF2B2 /* MoyaProvider+Default.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -34,8 +34,8 @@ extension MoyaProvider {
     }
     
     func requestPromise<T: Decodable>(target: Target,
-                                       queue: DispatchQueue? = nil,
-                                       progress: Moya.ProgressBlock? = nil) -> Promise<T> {
+                                      queue: DispatchQueue? = nil,
+                                      progress: Moya.ProgressBlock? = nil) -> Promise<T> {
         return requestPromise(target: target, queue: queue, progress: progress)
             .map { data in
                 let filtered = try data.filterSuccessfulStatusAndRedirectCodes()
