@@ -11,7 +11,6 @@ import Foundation
 
 extension MoyaProvider {
     
-    
     /// Базовый `MoyaProvider` с логированием запросов и плагином авторизации
     ///
     /// - Parameter tokenService: сервис для работы с токенами авторизации
