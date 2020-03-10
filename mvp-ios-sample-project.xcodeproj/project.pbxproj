@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,16 +36,13 @@
 		15B8BF6624179FCA003ADBCE /* UIStoryboard+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8BF6524179FCA003ADBCE /* UIStoryboard+ViewController.swift */; };
 		15B8BF682417A2B3003ADBCE /* SwinjectStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8BF672417A2B3003ADBCE /* SwinjectStoryboard+Ext.swift */; };
 		15B8BF6A2417A2D5003ADBCE /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8BF692417A2D5003ADBCE /* AppAssembly.swift */; };
-		15B8BF6D2417A52A003ADBCE /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 15B8BF6C2417A52A003ADBCE /* SwinjectStoryboard */; };
 		15DC6C582416EC1E007CF2B2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 15DC6C572416EC1E007CF2B2 /* README.md */; };
-		15DC6C5B2416F07D007CF2B2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 15DC6C5A2416F07D007CF2B2 /* Moya */; };
-		15DC6C5E2416F0EB007CF2B2 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 15DC6C5D2416F0EB007CF2B2 /* PromiseKit */; };
-		15DC6C612416F17C007CF2B2 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 15DC6C602416F17C007CF2B2 /* Swinject */; };
 		4705293CE9D55C77B7A1D28D /* Posts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B8D3A6C2C2171012EF3E91 /* Posts.storyboard */; };
 		7CDD7FD44F4F9C7E7B302D04 /* PostsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A296EDFFCC724404CA2BF1A0 /* PostsRouter.swift */; };
 		82EE57433098B4E5620DA8D7 /* PostsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C8C70B85FEAE3502C0ED45 /* PostsAssembly.swift */; };
 		851BBEBB5FB16A5409C9BA22 /* PostsViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72719AD5116AB5E4635BF6EE /* PostsViewIO.swift */; };
 		9DCA5F3322A22A2E7C898E8F /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56F64C9CE8C0E7CD7E4D8B /* PostsViewController.swift */; };
+		A82551BBAB40DDCE0573E5A0 /* Pods_mvp_ios_sample_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888E732486BC448B0FFFC3A0 /* Pods_mvp_ios_sample_project.framework */; };
 		CF045EF151BD61115E1C1E84 /* PostsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC007A2F25B2CF3172BC5D /* PostsPresenter.swift */; };
 		E16C60592CAD34D6C40D64BF /* PostsModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51239792FDF03C36D8A551C /* PostsModuleIO.swift */; };
 		F00BF49AB40B7E786A5D3292 /* PostsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F6C1B23965BF5F6C10F43 /* PostsRoute.swift */; };
@@ -89,9 +86,12 @@
 		70DC007A2F25B2CF3172BC5D /* PostsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostsPresenter.swift; sourceTree = "<group>"; };
 		72719AD5116AB5E4635BF6EE /* PostsViewIO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostsViewIO.swift; sourceTree = "<group>"; };
 		7E5F6C1B23965BF5F6C10F43 /* PostsRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostsRoute.swift; sourceTree = "<group>"; };
+		888E732486BC448B0FFFC3A0 /* Pods_mvp_ios_sample_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvp_ios_sample_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A296EDFFCC724404CA2BF1A0 /* PostsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostsRouter.swift; sourceTree = "<group>"; };
+		A5C594E9DE68C227B456DD95 /* Pods-mvp-ios-sample-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvp-ios-sample-project.debug.xcconfig"; path = "Target Support Files/Pods-mvp-ios-sample-project/Pods-mvp-ios-sample-project.debug.xcconfig"; sourceTree = "<group>"; };
 		AF56F64C9CE8C0E7CD7E4D8B /* PostsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		E51239792FDF03C36D8A551C /* PostsModuleIO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostsModuleIO.swift; sourceTree = "<group>"; };
+		FAEF473A8A12118843E5E72C /* Pods-mvp-ios-sample-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvp-ios-sample-project.release.xcconfig"; path = "Target Support Files/Pods-mvp-ios-sample-project/Pods-mvp-ios-sample-project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15DC6C5B2416F07D007CF2B2 /* Moya in Frameworks */,
-				15DC6C5E2416F0EB007CF2B2 /* PromiseKit in Frameworks */,
-				15B8BF6D2417A52A003ADBCE /* SwinjectStoryboard in Frameworks */,
-				15DC6C612416F17C007CF2B2 /* Swinject in Frameworks */,
+				A82551BBAB40DDCE0573E5A0 /* Pods_mvp_ios_sample_project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +112,13 @@
 				33C8C70B85FEAE3502C0ED45 /* PostsAssembly.swift */,
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1503B9B12417B008006F87B2 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		1562AED724179A2600CB2E3E /* Source */ = {
@@ -141,6 +145,7 @@
 		1562AEDB24179A2600CB2E3E /* Core additions */ = {
 			isa = PBXGroup;
 			children = (
+				1503B9B12417B008006F87B2 /* DI */,
 				15B8BF6524179FCA003ADBCE /* UIStoryboard+ViewController.swift */,
 				15B8BF672417A2B3003ADBCE /* SwinjectStoryboard+Ext.swift */,
 				15B8BF4F24179EFC003ADBCE /* Routing */,
@@ -306,6 +311,8 @@
 				15DC6C422416EB30007CF2B2 /* mvp-ios-sample-project */,
 				15B8BF3524179C92003ADBCE /* Templates */,
 				15DC6C412416EB30007CF2B2 /* Products */,
+				55935F5A9B58963DE3FCC40C /* Pods */,
+				2814CDC9AE05478D9448B156 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -326,12 +333,29 @@
 			path = "mvp-ios-sample-project";
 			sourceTree = "<group>";
 		};
+		2814CDC9AE05478D9448B156 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				888E732486BC448B0FFFC3A0 /* Pods_mvp_ios_sample_project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3288ED25E66077421EE67107 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
 				51B8D3A6C2C2171012EF3E91 /* Posts.storyboard */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		55935F5A9B58963DE3FCC40C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5C594E9DE68C227B456DD95 /* Pods-mvp-ios-sample-project.debug.xcconfig */,
+				FAEF473A8A12118843E5E72C /* Pods-mvp-ios-sample-project.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		5DAFAFC19F8C9E8C0240A074 /* Router */ = {
@@ -380,9 +404,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15DC6C542416EB33007CF2B2 /* Build configuration list for PBXNativeTarget "mvp-ios-sample-project" */;
 			buildPhases = (
+				EB0C90C02C25F7F639A53CB5 /* [CP] Check Pods Manifest.lock */,
 				15DC6C3C2416EB30007CF2B2 /* Sources */,
 				15DC6C3D2416EB30007CF2B2 /* Frameworks */,
 				15DC6C3E2416EB30007CF2B2 /* Resources */,
+				A7D2A07619B07D84525B6BFB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,10 +416,6 @@
 			);
 			name = "mvp-ios-sample-project";
 			packageProductDependencies = (
-				15DC6C5A2416F07D007CF2B2 /* Moya */,
-				15DC6C5D2416F0EB007CF2B2 /* PromiseKit */,
-				15DC6C602416F17C007CF2B2 /* Swinject */,
-				15B8BF6C2417A52A003ADBCE /* SwinjectStoryboard */,
 			);
 			productName = "mvp-ios-template-project";
 			productReference = 15DC6C402416EB30007CF2B2 /* mvp-ios-sample-project.app */;
@@ -424,10 +446,6 @@
 			);
 			mainGroup = 15DC6C372416EB30007CF2B2;
 			packageReferences = (
-				15DC6C592416F07D007CF2B2 /* XCRemoteSwiftPackageReference "Moya" */,
-				15DC6C5C2416F0EB007CF2B2 /* XCRemoteSwiftPackageReference "PromiseKit" */,
-				15DC6C5F2416F17C007CF2B2 /* XCRemoteSwiftPackageReference "Swinject" */,
-				15B8BF6B2417A52A003ADBCE /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */,
 			);
 			productRefGroup = 15DC6C412416EB30007CF2B2 /* Products */;
 			projectDirPath = "";
@@ -460,6 +478,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7D2A07619B07D84525B6BFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mvp-ios-sample-project/Pods-mvp-ios-sample-project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mvp-ios-sample-project/Pods-mvp-ios-sample-project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mvp-ios-sample-project/Pods-mvp-ios-sample-project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB0C90C02C25F7F639A53CB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mvp-ios-sample-project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15DC6C3C2416EB30007CF2B2 /* Sources */ = {
@@ -624,6 +684,7 @@
 		};
 		15DC6C552416EB33007CF2B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5C594E9DE68C227B456DD95 /* Pods-mvp-ios-sample-project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -643,6 +704,7 @@
 		};
 		15DC6C562416EB33007CF2B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAEF473A8A12118843E5E72C /* Pods-mvp-ios-sample-project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -682,64 +744,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		15B8BF6B2417A52A003ADBCE /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/BarredEwe/SwinjectStoryboard.git";
-			requirement = {
-				branch = swiftPM;
-				kind = branch;
-			};
-		};
-		15DC6C592416F07D007CF2B2 /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 14.0.0;
-			};
-		};
-		15DC6C5C2416F0EB007CF2B2 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mxcl/PromiseKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.13.1;
-			};
-		};
-		15DC6C5F2416F17C007CF2B2 /* XCRemoteSwiftPackageReference "Swinject" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Swinject/Swinject";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.7.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		15B8BF6C2417A52A003ADBCE /* SwinjectStoryboard */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 15B8BF6B2417A52A003ADBCE /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */;
-			productName = SwinjectStoryboard;
-		};
-		15DC6C5A2416F07D007CF2B2 /* Moya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 15DC6C592416F07D007CF2B2 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
-		};
-		15DC6C5D2416F0EB007CF2B2 /* PromiseKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 15DC6C5C2416F0EB007CF2B2 /* XCRemoteSwiftPackageReference "PromiseKit" */;
-			productName = PromiseKit;
-		};
-		15DC6C602416F17C007CF2B2 /* Swinject */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 15DC6C5F2416F17C007CF2B2 /* XCRemoteSwiftPackageReference "Swinject" */;
-			productName = Swinject;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15DC6C382416EB30007CF2B2 /* Project object */;
 }

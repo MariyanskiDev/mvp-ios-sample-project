@@ -15,6 +15,7 @@ final class PostsAssembly: Assembly {
         registerRouter(container)
         registerPresenter(container)
         registerViewController(container)
+        registerViewControllerFromStoryboard(container)
     }
 }
 
