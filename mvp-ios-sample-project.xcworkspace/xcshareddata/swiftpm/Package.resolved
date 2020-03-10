@@ -54,6 +54,15 @@
           "revision": "8a76d2c74bafbb455763487cc6a08e91bad1f78b",
           "version": "2.7.1"
         }
+      },
+      {
+        "package": "SwinjectStoryboard",
+        "repositoryURL": "https://github.com/BarredEwe/SwinjectStoryboard.git",
+        "state": {
+          "branch": "swiftPM",
+          "revision": "1b78f9593c4153fbb9d6b1aff886071a4fc8beb4",
+          "version": null
+        }
       }
     ]
   },

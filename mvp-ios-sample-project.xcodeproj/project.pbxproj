@@ -15,8 +15,6 @@
 		1562AEF524179A2600CB2E3E /* MoyaProvider+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562AEE124179A2600CB2E3E /* MoyaProvider+Promise.swift */; };
 		1562AEF624179A2600CB2E3E /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562AEE324179A2600CB2E3E /* PostsService.swift */; };
 		1562AEF724179A2600CB2E3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562AEE524179A2600CB2E3E /* AppDelegate.swift */; };
-		1562AEF824179A2600CB2E3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562AEE824179A2600CB2E3E /* ViewController.swift */; };
-		1562AEF924179A2600CB2E3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1562AEE924179A2600CB2E3E /* Main.storyboard */; };
 		1562AEFA24179A2600CB2E3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1562AEEC24179A2600CB2E3E /* Assets.xcassets */; };
 		1562AEFB24179A2600CB2E3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1562AEED24179A2600CB2E3E /* LaunchScreen.storyboard */; };
 		15B8BF4624179C92003ADBCE /* assembly.swift.liquid in Resources */ = {isa = PBXBuildFile; fileRef = 15B8BF3924179C92003ADBCE /* assembly.swift.liquid */; };
@@ -36,10 +34,21 @@
 		15B8BF6224179EFC003ADBCE /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8BF5824179EFC003ADBCE /* Transition.swift */; };
 		15B8BF6424179EFC003ADBCE /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8BF5A24179EFC003ADBCE /* PushTransition.swift */; };
 		15B8BF6624179FCA003ADBCE /* UIStoryboard+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8BF6524179FCA003ADBCE /* UIStoryboard+ViewController.swift */; };
+		15B8BF682417A2B3003ADBCE /* SwinjectStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8BF672417A2B3003ADBCE /* SwinjectStoryboard+Ext.swift */; };
+		15B8BF6A2417A2D5003ADBCE /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8BF692417A2D5003ADBCE /* AppAssembly.swift */; };
+		15B8BF6D2417A52A003ADBCE /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 15B8BF6C2417A52A003ADBCE /* SwinjectStoryboard */; };
 		15DC6C582416EC1E007CF2B2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 15DC6C572416EC1E007CF2B2 /* README.md */; };
 		15DC6C5B2416F07D007CF2B2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 15DC6C5A2416F07D007CF2B2 /* Moya */; };
 		15DC6C5E2416F0EB007CF2B2 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 15DC6C5D2416F0EB007CF2B2 /* PromiseKit */; };
 		15DC6C612416F17C007CF2B2 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 15DC6C602416F17C007CF2B2 /* Swinject */; };
+		4705293CE9D55C77B7A1D28D /* Posts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B8D3A6C2C2171012EF3E91 /* Posts.storyboard */; };
+		7CDD7FD44F4F9C7E7B302D04 /* PostsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A296EDFFCC724404CA2BF1A0 /* PostsRouter.swift */; };
+		82EE57433098B4E5620DA8D7 /* PostsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C8C70B85FEAE3502C0ED45 /* PostsAssembly.swift */; };
+		851BBEBB5FB16A5409C9BA22 /* PostsViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72719AD5116AB5E4635BF6EE /* PostsViewIO.swift */; };
+		9DCA5F3322A22A2E7C898E8F /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56F64C9CE8C0E7CD7E4D8B /* PostsViewController.swift */; };
+		CF045EF151BD61115E1C1E84 /* PostsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC007A2F25B2CF3172BC5D /* PostsPresenter.swift */; };
+		E16C60592CAD34D6C40D64BF /* PostsModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51239792FDF03C36D8A551C /* PostsModuleIO.swift */; };
+		F00BF49AB40B7E786A5D3292 /* PostsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F6C1B23965BF5F6C10F43 /* PostsRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,8 +60,6 @@
 		1562AEE124179A2600CB2E3E /* MoyaProvider+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Promise.swift"; sourceTree = "<group>"; };
 		1562AEE324179A2600CB2E3E /* PostsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
 		1562AEE524179A2600CB2E3E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1562AEE824179A2600CB2E3E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1562AEEA24179A2600CB2E3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1562AEEC24179A2600CB2E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1562AEEE24179A2600CB2E3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1562AEEF24179A2600CB2E3E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,8 +80,18 @@
 		15B8BF5824179EFC003ADBCE /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		15B8BF5A24179EFC003ADBCE /* PushTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
 		15B8BF6524179FCA003ADBCE /* UIStoryboard+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+ViewController.swift"; sourceTree = "<group>"; };
+		15B8BF672417A2B3003ADBCE /* SwinjectStoryboard+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Ext.swift"; sourceTree = "<group>"; };
+		15B8BF692417A2D5003ADBCE /* AppAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		15DC6C402416EB30007CF2B2 /* mvp-ios-sample-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvp-ios-sample-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DC6C572416EC1E007CF2B2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		33C8C70B85FEAE3502C0ED45 /* PostsAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostsAssembly.swift; sourceTree = "<group>"; };
+		51B8D3A6C2C2171012EF3E91 /* Posts.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Posts.storyboard; sourceTree = "<group>"; };
+		70DC007A2F25B2CF3172BC5D /* PostsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostsPresenter.swift; sourceTree = "<group>"; };
+		72719AD5116AB5E4635BF6EE /* PostsViewIO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostsViewIO.swift; sourceTree = "<group>"; };
+		7E5F6C1B23965BF5F6C10F43 /* PostsRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostsRoute.swift; sourceTree = "<group>"; };
+		A296EDFFCC724404CA2BF1A0 /* PostsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostsRouter.swift; sourceTree = "<group>"; };
+		AF56F64C9CE8C0E7CD7E4D8B /* PostsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		E51239792FDF03C36D8A551C /* PostsModuleIO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostsModuleIO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +101,7 @@
 			files = (
 				15DC6C5B2416F07D007CF2B2 /* Moya in Frameworks */,
 				15DC6C5E2416F0EB007CF2B2 /* PromiseKit in Frameworks */,
+				15B8BF6D2417A52A003ADBCE /* SwinjectStoryboard in Frameworks */,
 				15DC6C612416F17C007CF2B2 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,12 +109,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06E5EE34C8A87C5E92C83222 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				33C8C70B85FEAE3502C0ED45 /* PostsAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		1562AED724179A2600CB2E3E /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				1562AED824179A2600CB2E3E /* Models */,
-				1562AEDB24179A2600CB2E3E /* Core additions */,
 				1562AEE424179A2600CB2E3E /* Application */,
+				1562AEDB24179A2600CB2E3E /* Core additions */,
+				1562AED824179A2600CB2E3E /* Models */,
 				1562AEE624179A2600CB2E3E /* Modules */,
 			);
 			name = Source;
@@ -116,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				15B8BF6524179FCA003ADBCE /* UIStoryboard+ViewController.swift */,
+				15B8BF672417A2B3003ADBCE /* SwinjectStoryboard+Ext.swift */,
 				15B8BF4F24179EFC003ADBCE /* Routing */,
 				1562AEDC24179A2600CB2E3E /* Networking */,
 			);
@@ -153,6 +180,7 @@
 		1562AEE424179A2600CB2E3E /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				15B8BF692417A2D5003ADBCE /* AppAssembly.swift */,
 				1562AEE524179A2600CB2E3E /* AppDelegate.swift */,
 			);
 			path = Application;
@@ -161,18 +189,9 @@
 		1562AEE624179A2600CB2E3E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1562AEE724179A2600CB2E3E /* Temp */,
+				A4B1B2779BE9D44D6BB1E665 /* Posts */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		1562AEE724179A2600CB2E3E /* Temp */ = {
-			isa = PBXGroup;
-			children = (
-				1562AEE824179A2600CB2E3E /* ViewController.swift */,
-				1562AEE924179A2600CB2E3E /* Main.storyboard */,
-			);
-			path = Temp;
 			sourceTree = "<group>";
 		};
 		1562AEEB24179A2600CB2E3E /* Resource */ = {
@@ -301,10 +320,57 @@
 		15DC6C422416EB30007CF2B2 /* mvp-ios-sample-project */ = {
 			isa = PBXGroup;
 			children = (
-				1562AEEB24179A2600CB2E3E /* Resource */,
 				1562AED724179A2600CB2E3E /* Source */,
+				1562AEEB24179A2600CB2E3E /* Resource */,
 			);
 			path = "mvp-ios-sample-project";
+			sourceTree = "<group>";
+		};
+		3288ED25E66077421EE67107 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				51B8D3A6C2C2171012EF3E91 /* Posts.storyboard */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		5DAFAFC19F8C9E8C0240A074 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A296EDFFCC724404CA2BF1A0 /* PostsRouter.swift */,
+				7E5F6C1B23965BF5F6C10F43 /* PostsRoute.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A4B1B2779BE9D44D6BB1E665 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				06E5EE34C8A87C5E92C83222 /* Assembly */,
+				5DAFAFC19F8C9E8C0240A074 /* Router */,
+				FB64ED1162BBC7F4C9DC5F44 /* Presenter */,
+				FF69A006BB4EABB756F8E16A /* View */,
+				3288ED25E66077421EE67107 /* Layout */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		FB64ED1162BBC7F4C9DC5F44 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				70DC007A2F25B2CF3172BC5D /* PostsPresenter.swift */,
+				E51239792FDF03C36D8A551C /* PostsModuleIO.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FF69A006BB4EABB756F8E16A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF56F64C9CE8C0E7CD7E4D8B /* PostsViewController.swift */,
+				72719AD5116AB5E4635BF6EE /* PostsViewIO.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +393,7 @@
 				15DC6C5A2416F07D007CF2B2 /* Moya */,
 				15DC6C5D2416F0EB007CF2B2 /* PromiseKit */,
 				15DC6C602416F17C007CF2B2 /* Swinject */,
+				15B8BF6C2417A52A003ADBCE /* SwinjectStoryboard */,
 			);
 			productName = "mvp-ios-template-project";
 			productReference = 15DC6C402416EB30007CF2B2 /* mvp-ios-sample-project.app */;
@@ -360,6 +427,7 @@
 				15DC6C592416F07D007CF2B2 /* XCRemoteSwiftPackageReference "Moya" */,
 				15DC6C5C2416F0EB007CF2B2 /* XCRemoteSwiftPackageReference "PromiseKit" */,
 				15DC6C5F2416F17C007CF2B2 /* XCRemoteSwiftPackageReference "Swinject" */,
+				15B8BF6B2417A52A003ADBCE /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */,
 			);
 			productRefGroup = 15DC6C412416EB30007CF2B2 /* Products */;
 			projectDirPath = "";
@@ -377,7 +445,6 @@
 			files = (
 				15B8BF4C24179C92003ADBCE /* router.swift.liquid in Resources */,
 				15DC6C582416EC1E007CF2B2 /* README.md in Resources */,
-				1562AEF924179A2600CB2E3E /* Main.storyboard in Resources */,
 				1562AEFB24179A2600CB2E3E /* LaunchScreen.storyboard in Resources */,
 				15B8BF4624179C92003ADBCE /* assembly.swift.liquid in Resources */,
 				15B8BF4924179C92003ADBCE /* module_io.swift.liquid in Resources */,
@@ -388,6 +455,7 @@
 				15B8BF4724179C92003ADBCE /* storyboard.storyboard.liquid in Resources */,
 				1562AEFA24179A2600CB2E3E /* Assets.xcassets in Resources */,
 				15B8BF4824179C92003ADBCE /* presenter.swift.liquid in Resources */,
+				4705293CE9D55C77B7A1D28D /* Posts.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +467,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1562AEF724179A2600CB2E3E /* AppDelegate.swift in Sources */,
+				15B8BF682417A2B3003ADBCE /* SwinjectStoryboard+Ext.swift in Sources */,
 				1562AEF424179A2600CB2E3E /* DefaultTargetType.swift in Sources */,
 				1562AEF024179A2600CB2E3E /* Comment.swift in Sources */,
 				15B8BF5D24179EFC003ADBCE /* Animator.swift in Sources */,
-				1562AEF824179A2600CB2E3E /* ViewController.swift in Sources */,
 				15B8BF6224179EFC003ADBCE /* Transition.swift in Sources */,
 				1562AEF624179A2600CB2E3E /* PostsService.swift in Sources */,
 				1562AEF524179A2600CB2E3E /* MoyaProvider+Promise.swift in Sources */,
@@ -415,20 +483,20 @@
 				15B8BF6424179EFC003ADBCE /* PushTransition.swift in Sources */,
 				15B8BF5B24179EFC003ADBCE /* Closable.swift in Sources */,
 				15B8BF6624179FCA003ADBCE /* UIStoryboard+ViewController.swift in Sources */,
+				15B8BF6A2417A2D5003ADBCE /* AppAssembly.swift in Sources */,
+				82EE57433098B4E5620DA8D7 /* PostsAssembly.swift in Sources */,
+				7CDD7FD44F4F9C7E7B302D04 /* PostsRouter.swift in Sources */,
+				F00BF49AB40B7E786A5D3292 /* PostsRoute.swift in Sources */,
+				CF045EF151BD61115E1C1E84 /* PostsPresenter.swift in Sources */,
+				E16C60592CAD34D6C40D64BF /* PostsModuleIO.swift in Sources */,
+				9DCA5F3322A22A2E7C898E8F /* PostsViewController.swift in Sources */,
+				851BBEBB5FB16A5409C9BA22 /* PostsViewIO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1562AEE924179A2600CB2E3E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1562AEEA24179A2600CB2E3E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1562AEED24179A2600CB2E3E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -616,6 +684,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		15B8BF6B2417A52A003ADBCE /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BarredEwe/SwinjectStoryboard.git";
+			requirement = {
+				branch = swiftPM;
+				kind = branch;
+			};
+		};
 		15DC6C592416F07D007CF2B2 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya";
@@ -643,6 +719,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		15B8BF6C2417A52A003ADBCE /* SwinjectStoryboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15B8BF6B2417A52A003ADBCE /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */;
+			productName = SwinjectStoryboard;
+		};
 		15DC6C5A2416F07D007CF2B2 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 15DC6C592416F07D007CF2B2 /* XCRemoteSwiftPackageReference "Moya" */;
